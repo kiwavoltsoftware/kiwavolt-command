@@ -5,7 +5,7 @@ Windows software for a private PRL solo-mining fleet. Kiwavolt Command includes 
 ## Download
 Use the Windows installers under [Releases](https://github.com/kiwavoltsoftware/kiwavolt-command/releases/latest).
 
-- **Host PC:** Kiwavolt Command 0.4.2 installer. Mining is built in; no separate Miner app.
+- **Host PC:** Kiwavolt Command 0.5.0 installer. Mining is built in; no separate Miner app.
 - **Other GPU PCs:** use the same Command installer with your private `My-Kiwavolt-Pool.pearlpair` file beside it. Setup imports the connection, encrypts it locally and enables worker mode. Worker mode runs no blockchain node or Stratum server. Open Mining and press Start mining. PCs need LAN access to the existing host.
 - This is a private-fleet edition configured for its owner's public reward address. It is not a general wallet or a public mining service. Check the displayed reward address before starting.
 
@@ -22,3 +22,6 @@ Never upload pairing files, RPC passwords, wallet seeds or private keys to this 
 46 automated tests passed, packaged RTX 5080 GPU self-test passed, and the packaged host/miner submitted two accepted blocks on an isolated test chain. Only one physical GPU was available; multi-GPU routing is tested with simulated devices. No mainnet block reward is claimed by these tests.
 
 Third-party license notices are included with each installer. Mining performance and rewards are not guaranteed.
+
+## Fleet monitoring
+The host Workers tab includes per-PC GPU readings, seven-day history and configurable health alerts. History begins at installation. Remote GPUs need the current Command engine for temperature and power reporting. GPU watts are not whole-PC wall watts. Optional desktop notifications require the dashboard window open; the service records alerts independently of the browser.
